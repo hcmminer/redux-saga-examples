@@ -1,0 +1,34 @@
+{
+	"name": "async-example",
+	"private": true,
+	"version": "1.1.3",
+	"main": "src/main.js",
+	"scripts": {
+		"start": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server",
+		"test": "cross-env NODE_ENV=test babel-node test/sagas.js | tap-spec"
+	},
+	"dependencies": {
+		"@babel/polyfill": "^7.6.0",
+		"isomorphic-fetch": "^2.2.0",
+		"prop-types": "^15.6.2",
+		"react": "^16.10.2",
+		"react-dom": "^16.10.2",
+		"react-redux": "^5.0.7",
+		"redux": "4.0.4",
+		"redux-saga": "^1.1.3"
+	},
+	"devDependencies": {
+		"@babel/core": "latest",
+		"@babel/node": "latest",
+		"@babel/preset-env": "latest",
+		"@babel/preset-react": "latest",
+		"babel-loader": "latest",
+		"cross-env": "latest",
+		"html-webpack-plugin": "latest",
+		"tap-spec": "latest",
+		"tape": "latest",
+		"webpack": "latest",
+		"webpack-cli": "latest",
+		"webpack-dev-server": "latest"
+	}
+}
