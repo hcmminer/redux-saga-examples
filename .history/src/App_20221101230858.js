@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import "./App.css";
 import { connect } from "react-redux";
 import { incrementAction, decrementAction } from "./actions";
@@ -44,11 +44,7 @@ class App extends Component {
 	}
 }
 
-App.propTypes = {
-	times: PropTypes.number.isRequired,
-	onDecrement: PropTypes.func.isRequired,
-	onIncrement: PropTypes.func.isRequired,
-};
+// App.propTypes = {};
 
 const mapStateToProps = (state) => {
 	return {
@@ -66,5 +62,5 @@ const mapDispatchToProps = (dispatch) => {
 		},
 	};
 };
-// nhu vay App co 3 prop la times, onDecrement, onIncrement
+// nhu vay App co 3 prop la times
 export default connect(mapStateToProps, mapDispatchToProps)(App);

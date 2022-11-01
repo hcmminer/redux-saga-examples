@@ -45,7 +45,7 @@ class App extends Component {
 }
 
 App.propTypes = {
-	times: PropTypes.number.isRequired,
+	times: PropTypes.string.isRequired,
 	onDecrement: PropTypes.func.isRequired,
 	onIncrement: PropTypes.func.isRequired,
 };

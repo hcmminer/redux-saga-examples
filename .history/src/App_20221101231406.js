@@ -45,9 +45,8 @@ class App extends Component {
 }
 
 App.propTypes = {
-	times: PropTypes.number.isRequired,
-	onDecrement: PropTypes.func.isRequired,
-	onIncrement: PropTypes.func.isRequired,
+  times : PropTypes.string.isRequired,
+  on
 };
 
 const mapStateToProps = (state) => {

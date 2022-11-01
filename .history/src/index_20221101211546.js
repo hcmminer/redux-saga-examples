@@ -16,6 +16,7 @@ import createSagaMiddleware from "redux-saga"; // hàm này có nhiệm vụ t�
 const sagaMiddleware = createSagaMiddleware();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 const store = createStore(myReducer, applyMiddleware(sagaMiddleware));
 root.render(
 	<React.StrictMode>

@@ -1,6 +1,5 @@
 import { INCREMENT, DECREMENT } from "../actions/actionTypes";
 
-// khai bao cac method cho state, moi method la 1 function
 const counterReducers = (times = 0, action) => {
 	switch (action.type) {
 		case INCREMENT:
