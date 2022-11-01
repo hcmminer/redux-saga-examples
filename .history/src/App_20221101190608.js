@@ -5,12 +5,12 @@ import { connect } from "react-redux";
 import { incrementAction, decrementAction } from "./actions";
 
 class App extends Component {
-	onDecrement() {
+  onDecrement() {
 		this.props.onDecrement(1);
 	}
 
 	onIncrement() {
-		this.props.onIncrement(1);
+		this.props.onIncrement(1)
 	}
 	render() {
 		return (

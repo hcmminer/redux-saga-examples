@@ -9,7 +9,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 // redux-saga
 import rootSaga from "./sagas/rootSaga";
-import createSagaMiddleware from "redux-saga"; // hàm này có nhiệm vụ tạo ra một middleware năm giữa action và reducer trong redux
+import createSagaMiddleware from "@redux-saga"; // hàm này có nhiệm vụ tạo ra một middleware năm giữa action và reducer trong redux
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

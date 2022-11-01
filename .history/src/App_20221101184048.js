@@ -1,17 +1,10 @@
 import React, { Component } from "react";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import "./App.css";
 import { connect } from "react-redux";
 import { incrementAction, decrementAction } from "./actions";
 
 class App extends Component {
-	onDecrement() {
-		this.props.onDecrement(1);
-	}
-
-	onIncrement() {
-		this.props.onIncrement(1);
-	}
 	render() {
 		return (
 			<div className="App">
@@ -44,23 +37,6 @@ class App extends Component {
 	}
 }
 
-// App.propTypes = {};
+App.propTypes = {};
 
-const mapStateToProps = (state) => {
-	return {
-		times: state.counterReducers ? state.counterReducers : 0,
-	};
-};
-
-const mapDispatchToProps = (dispatch) => {
-	return {
-		onDecrement: (step) => {
-			dispatch(decrementAction(step));
-		},
-		onIncrement: (step) => {
-			dispatch(incrementAction(step));
-		},
-	};
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

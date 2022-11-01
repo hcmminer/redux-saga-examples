@@ -6,10 +6,10 @@ import * as serviceWorker from "./serviceWorker";
 // redux
 import myReducer from "./reducers";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
 // redux-saga
 import rootSaga from "./sagas/rootSaga";
-import createSagaMiddleware from "redux-saga"; // hàm này có nhiệm vụ tạo ra một middleware năm giữa action và reducer trong redux
+import { createStore, applyMiddleware } from "redux-saga";
+import createSagaMiddleware from "@redux-saga/core"; // hàm này có nhiệm vụ tạo ra một middleware năm giữa action và reducer trong redux
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -25,6 +25,6 @@ root.render(
 	</React.StrictMode>
 );
 
-sagaMiddleware.run(rootSaga); // Hàm này là chạy các saga
+sagaMiddleware.run(rootSaga);
 
 serviceWorker.unregister();
