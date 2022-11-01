@@ -11,13 +11,15 @@ class App extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleRefreshClick = this.handleRefreshClick.bind(this);
   }
-
+  // nextReddit = gia tri khi click vao option in Picker
   handleChange(nextReddit) {
+    // dispatch la method cua redux
     this.props.dispatch(selectReddit(nextReddit));
   }
 
   handleRefreshClick(e) {
-    e.preventDefault();
+    e.preventDefault(); // chan link theo mac dinh
+    // selectedReddit la prop cua App duoc truyen vao thong qua ham mapStateToProps
     const { dispatch, selectedReddit } = this.props;
     dispatch(invalidateReddit(selectedReddit));
   }
@@ -56,6 +58,7 @@ App.propTypes = {
 };
 
 function mapStateToProps(state) {
+  // state cua redux store
   const { selectedReddit, postsByReddit } = state;
   const {
     isFetching,
