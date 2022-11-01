@@ -56,6 +56,7 @@ const mapStateToProps = (state) => {
 	};
 };
 
+// dispatch la phuong thuc mac dinh cua redux
 const mapDispatchToProps = (dispatch) => {
 	return {
 		onDecrement: (step) => {
