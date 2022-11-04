@@ -3,6 +3,7 @@ export const RECEIVE_POSTS = 'RECEIVE_POSTS';
 export const SELECT_REDDIT = 'SELECT_REDDIT';
 export const INVALIDATE_REDDIT = 'INVALIDATE_REDDIT';
 
+// nhan vao payload tu view va tra ve action moi 
 export function selectReddit(reddit) {
   return {
     type: SELECT_REDDIT,

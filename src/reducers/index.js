@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { SELECT_REDDIT, REQUEST_POSTS, RECEIVE_POSTS } from '../actions';
-
+// dua vao action de thay doi state
 function selectedReddit(state = 'reactjs', action) {
   switch (action.type) {
     case SELECT_REDDIT:
